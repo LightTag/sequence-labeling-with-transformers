@@ -5,7 +5,7 @@ and to create pytorch datasets and dataloaders that handle padding and batching.
 
 The impetus for this repo is this [github issue](https://github.com/huggingface/transformers/issues/7019).
 A blog post explaining our thinking around how to [best prepare sequence labeling data for use with pre-trained transformers](https://www.lighttag.io/blog/sequence-labeling-with-transformers/)
-and another post, deriving [the implementation in this repo is here](sequence-labeling-with-transformers/example). 
+and another post, deriving [the implementation in this repo is here](https://lighttag.io/blog/sequence-labeling-with-transformers/example). 
 
 This is a POC and maybe a work in progress. Issues, PRs and contributions welcome. 
 The code is optimized for readability and clarity of thought. There is plenty of room for performance improvement, 
