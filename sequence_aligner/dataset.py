@@ -26,8 +26,7 @@ class TrainingDataset(Dataset):
         window_stride=None,
     ):
         self.label_set = label_set
-        if window_stride is None:
-            self.window_stride = tokens_per_batch
+        self.window_stride = window_stride or tokens_per_batch
         self.tokenizer = tokenizer
         self.texts = []
         self.annotations = []
