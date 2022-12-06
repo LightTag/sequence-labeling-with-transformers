@@ -43,7 +43,7 @@ We can do this
 ```python
 from sequence_aligner.labelset import LabelSet
 from sequence_aligner.dataset import  TrainingDataset
-from sequence_aligner.containers import TraingingBatch
+from sequence_aligner.containers import TrainingBatch
 import json
 raw = json.load(open('./data/ddi_train.json'))
 for example in raw:
@@ -60,7 +60,7 @@ optimizer = AdamW(model.parameters(), lr=5e-6)
 
 dataloader = DataLoader(
     dataset,
-    collate_fn=TraingingBatch,
+    collate_fn=TrainingBatch,
     batch_size=4,
     shuffle=True,
 )
