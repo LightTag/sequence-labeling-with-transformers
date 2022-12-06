@@ -16,7 +16,7 @@ class TrainingExample:
 
 
 
-class TraingingBatch:
+class TrainingBatch:
     def __getitem__(self, item):
         return getattr(self, item)
 
